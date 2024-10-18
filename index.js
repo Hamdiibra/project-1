@@ -37,6 +37,8 @@ function addToCart(productId, productName, productPrice) {
     };
     cart.push(cartItem);
     displayCart();
+    //alert user product has been added to cart 
+    alert('Product has been added to cart.');
 }
 
 // Function to display items in the cart
@@ -45,7 +47,7 @@ function displayCart() {
     cartItemsDiv.innerHTML = ''; // Clear current items
 
     cart.forEach(item => {
-        const itemElement = document.createElement('li'); // Use 'li' for list items
+        const itemElement = document.createElement('li'); // 'li' is for list items
         itemElement.innerHTML = `${item.name}, $${item.price}`;
         cartItemsDiv.appendChild(itemElement);
     });

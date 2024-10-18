@@ -1,22 +1,22 @@
 body { 
     background-color: #996666;
     display: flex;
-    flex-direction: column; /* Ensures the layout stacks vertically */
-    align-items: center; /* Center the content */
+    flex-direction: column; 
+    align-items: center;
 }
 
 #products {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center; /* Center products */
-    width: 100%; /* Ensure it takes full width */
+    justify-content: center; 
+    width: 100%;
 }
 
 .product {
     border: 1px solid #ccc;
     padding: 10px;
-    width: calc(25% - 20px); /* Adjust based on your layout */
+    width: calc(25% - 20px); 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -28,19 +28,19 @@ h1 {
 #cart {
     margin-top: 20px;
     padding: 10px;
-    border: 1px solid #ccc; /* Fixed typo "solod" to "solid" */
+    border: 1px solid #ccc;
     background-color: #f9f9f9;
-    width: 100%; /* Ensures it takes full width */
+    width: 100%;
 }
 
 #checkout {
     margin-top: 20px;
     padding: 10px;
-    border: 1px solid #ccc; /* Fixed typo "solod" to "solid" */
+    border: 1px solid #ccc;
     background-color: #f1f1f1;
     display: flex;
     justify-content: space-between;
-    width: 100%; /* Ensures it takes full width */
+    width: 100%; 
 }
 
 #checkout-button, #pay-button {
@@ -53,6 +53,6 @@ h1 {
 }
 
 #checkout-button:hover, #pay-button:hover {
-    background-color: #77757D; /* Change background color on hover */
-    border-color: #77757D; /* Optional: add border color on hover */
+    background-color: #77757D; 
+    border-color: #77757D; 
 }
